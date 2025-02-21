@@ -1,1 +1,67 @@
+/* Import the provided starting CSS file */
+@import url('https://knighthawk0811.github.io/Intro-HTML-CSS/templates/style.css');
 
+/* Remove margin from the body */
+body {
+  margin: 0;
+}
+
+/* Navigation list style changes */
+/* Change the visible bullets from circles to squares */
+nav ul {
+  list-style-type: square;
+}
+
+/* Change the color of the bullets (“buttlets”) to differ from the text */
+nav li::marker {
+  color: teal;
+}
+
+/* Nav link colors for different states */
+nav a:link {
+  color: #000; /* Base link color */
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: purple;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+nav a:active {
+  color: green;
+}
+
+/* Header styling: different background than main plus extra padding */
+header {
+  background-color: #444; /* Dark background for header */
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Main section styling */
+main {
+  width: calc(70% - 1px);  /* 70% width minus 1px */
+  float: left;             /* Align to left using float */
+  padding: 1rem;           /* 1rem of padding */
+  border-right: 1px solid #ccc;  /* 1px border on the right */
+  background-color: #fff;   /* Ensure main background is different from header */
+}
+
+/* Aside element styling */
+aside {
+  width: 30%;
+  float: right;  /* Align aside to the right */
+}
+
+/* Footer styling */
+footer {
+  clear: both;           /* Clear floated elements */
+  background-color: #444;  /* Same background as header */
+  text-align: center;    /* Center the text */
+  padding: 1rem;
+  color: #fff;
+}
