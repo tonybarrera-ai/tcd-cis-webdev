@@ -1,71 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What an Ugly Page</title>
-  <!-- Link to your external CSS file -->
-  <link rel="stylesheet" href="lab03.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What an Ugly Page</title>
+   <link rel="stylesheet" href="lab03.css">
+    <style>
+        /* Example of some basic styles for layout purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+            margin: 10px;
+        }
+        header {
+            background-color: #f4f4f4;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        nav ul li ul {
+            margin-top: 5px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        .primary {
+            flex: 1;
+        }
+        aside {
+            margin-top: 20px;
+        }
+        section {
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Clean Up That Ugly Page</h1>
-    <p>There's plenty of room for growth</p>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="https://www.example1.com" target="_blank" rel="nofollow">Website 1</a></li>
-      <li><a href="https://www.example2.com" target="_blank" rel="nofollow">Website 2</a></li>
-      <li>
-        <a href="https://www.example3.com" target="_blank" rel="nofollow">Website 3</a>
+    <header>
+        <h1>What an Ugly Page</h1>
+        <p>There's plenty of room for growth</p>
+    </header>
+
+    <nav>
         <ul>
-          <li><a href="https://www.example4.com" target="_blank" rel="nofollow">Sub Website 1</a></li>
-          <li><a href="https://www.example5.com" target="_blank" rel="nofollow">Sub Website 2</a></li>
+            <li><a href="https://www.example1.com" target="_blank" rel="nofollow">Website 1</a></li>
+            <li><a href="https://www.example2.com" target="_blank" rel="nofollow">Website 2</a></li>
+            <li>
+                <a href="https://www.example3.com" target="_blank" rel="nofollow">Website 3</a>
+                <ul>
+                    <li><a href="https://www.example4.com" target="_blank" rel="nofollow">Sub Website 1</a></li>
+                    <li><a href="https://www.example5.com" target="_blank" rel="nofollow">Sub Website 2</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.example6.com" target="_blank" rel="nofollow">Website 4</a></li>
         </ul>
-      </li>
-      <li><a href="https://www.example6.com" target="_blank" rel="nofollow">Website 4</a></li>
-    </ul>
-  </nav>
+    </nav>
 
-  <main>
-    <section class="primary">
-      <article>
-        <h2>Topic of Interest</h2>
-        <p><strong>Strong text</strong> and <em>emphasized text</em> about the topic.</p>
-      </article>
+    <main>
+        <section class="primary">
+            <article>
+                <h2>Topic of Interest</h2>
+                <p><strong>Strong text</strong> and <em>emphasized text</em> about the topic.</p>
+            </article>
 
-      <section>
-        <article>
-          <h2>Article 1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </article>
-        <article>
-          <h2>Article 2</h2>
-          <p>Suspendisse potenti. Sed tristique sit amet quam vel dictum. Etiam tempor dui nec ligula vulputate laoreet.</p>
-        </article>
-      </section>
+            <section>
+                <article>
+                    <h2>Article 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                </article>
+                <article>
+                    <h2>Article 2</h2>
+                    <p>Suspendisse potenti. Sed tristique sit amet quam vel dictum. Etiam tempor dui nec ligula vulputate laoreet.</p>
+                </article>
+            </section>
 
-      <aside>
-        <h3>Fake Ads</h3>
-        <img src="images/fake-product.jpg" alt="Fake Product">
-        <p>Buy this amazing fake product!</p>
-      </aside>
+            <aside>
+                <h3>Fake Ads</h3>
+                <img src="images/fake-product.jpg" alt="Fake Product">
+                <p>Buy this amazing fake product!</p>
+            </aside>
 
-      <section>
-        <h3>Another Section</h3>
-        <p>More content goes here...</p>
-      </section>
+            <section>
+                <h3>Another Section</h3>
+                <p>More content goes here...</p>
+            </section>
 
-      <section>
-        <h3>Another Section</h3>
-        <p>Even more content...</p>
-      </section>
-    </section>
-  </main>
+            <section>
+                <h3>Another Section</h3>
+                <p>Even more content...</p>
+            </section>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Anthony</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Your Name</p>
+    </footer>
+
 </body>
 </html>
